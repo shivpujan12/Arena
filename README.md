@@ -6,4 +6,4 @@ Progress of Content
 
 S.No.   |         Feature Name            | Develper assigned   | Tested | Status/Review   | Final Status
 :------:|:----------------------- |:-----------------:|:------:|:-----------------:|:------------:
-|1. | Project Creation  | Shivpujan | yes | pending | - |
+|1. | Project Creation with Old Arena  | Shivpujan | yes | pending | - |
