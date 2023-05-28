@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.title {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+}
+
+.arena{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.section-one{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    border-style: solid;
+    border-right-color: black;
+}
+
+.section-two{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    border-style: solid;
+    border-right-color: black;
+}
+
+.player-one{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.player-two{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.score{
+    font-size: 9vw;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.action{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plus {
+    height: 100%;
+    width: 30%;
+    font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
+    padding:  1vw 0 1vw 0;
+    margin: 1vw;
+}
+
+.minus {
+    height: 100%;
+    width: 30%;
+    font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
+    padding:  1vw 0 1vw 0;
+    margin: 1vw;
+}
+
+.progress{
+    background: #039be5;
+    font-family: 'Poppins', sans-serif;
+    font-size: x-large;
+    color: whitesmoke;
+    text-align: center;
+    height: 25%;
+    display: block;
+}
+
+#timer{
+    font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    height: 25%;
+    margin-bottom: 1vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#timer_div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+#timer-end-alert{
+    background: #ffa100;
+    font-family: 'Poppins', sans-serif;
+    font-size: x-large;
+    color: whitesmoke;
+    text-align: center;
+    height: 25%;
+    display: block;
+}
+
+.ver{
+    position: absolute;
+    left: 45%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 9vw;
+    background: white;
+    color: #ffa100;
+    top: 40%;
+}
+

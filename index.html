@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arena</title>
+    <link rel="stylesheet" href="index.css">
+</head>˘
+<body>
+    <div id="winner" class="title"><u>Arena</u></div>
+    <div id="timer_div">
+        <button id="timer" onclick="startCountDown()">Start Timer</button>
+    </div>
+    <div id="timer-end-alert">
+        Wait for the next match!
+    </div>
+    <div id="alert" class="progress">
+        Updating...
+    </div>
+    <div class="arena">
+        <div class="section-one">
+            <h2 id="player-one" class="player-one">Rishi</h2>
+            <div id="player-one-score" class="score">
+                00
+            </div>
+            <div class="action">
+                <button class="plus" onclick="one_incr()">
+                    +
+                </button>
+                <!--<button class="minus">
+                    -
+                </button>-->
+            </div>
+        </div>
+        <div id="player-two" class="section-two">
+            <h2 class="player-two">Shivpujan</h2>
+            <div id="player-two-score" class="score">
+                00
+            </div>
+            <div class="action">
+                <button class="plus" onclick="two_incr()">
+                    +
+                </button>
+                <!--<button class="minus">
+                    -
+                </button>-->
+            </div>
+        </div>
+        <div id="player-three" class="section-two">
+            <h2 class="player-two">Rohit</h2>
+            <div id="player-three-score" class="score">
+                00
+            </div>
+            <div class="action">
+                <button class="plus" onclick="three_incr()">
+                    +
+                </button>
+                <!--<button class="minus">
+                    -
+                </button>-->
+            </div>
+        </div>
+
+<!--        <div class="ver">-->
+<!--            Vs-->
+<!--        </div>-->
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+<script src="index.js"></script>
+</html>
