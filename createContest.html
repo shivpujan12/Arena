@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+  <title>Add Data to Table</title>
+<!--  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>-->
+<!--  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>-->
+  <link rel="stylesheet" href="./css/createContest.css">
+  <script src="./js/firebase.js" type="module"></script>
+  <script type="module" src = "./js/createContest.js" ></script>
+</head>
+<body>
+<div id="content">
+  <h1><b>Create Contest</b></h1>
+  <br>
+  <label for="topicInput">Contest Topic</label><input type="text" id="topicInput" placeholder="Topic"><br>
+  <label for="timeInput">Duration</label><input type="number" min="1" id="timeInput" placeholder="time "><br>
+  <input type="text" id="queNameInput" placeholder="Question Name">
+  <input type="text" id="queUrlInput" placeholder="Question Url"><br>
+  <button id="addButton">ADD</button>
+  <table id="table">
+    <tr>
+      <th>Que. Name</th>
+      <th>Que. Url</th>
+    </tr>
+  </table>
+    <br><br>
+  <button id="createButton">CREATE</button>
+</div>
+<div id="myPopup" class="popup">
+  <p id="popupText"></p>
+    <button id="popupButton">DONE</button>
+</div>
+</body>
+</html>

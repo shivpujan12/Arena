@@ -1,12 +1,12 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyCNHch4Ndg1m-JYIkOEb1-H7fZvfqG77Yc",
-    authDomain: "shivpujan-ee86d.firebaseapp.com",
-    databaseURL: "https://shivpujan-ee86d-default-rtdb.firebaseio.com",
-    projectId: "shivpujan-ee86d",
-    storageBucket: "shivpujan-ee86d.appspot.com",
-    messagingSenderId: "104195302667",
-    appId: "1:104195302667:web:575cffac513cefa8676e0e",
-    measurementId: "G-X1JMC4MD2X"
+    apiKey: "AIzaSyD0bctwz22Z12dfWIVLyylImlGldV8pkXc",
+    authDomain: "arena-ducs.firebaseapp.com",
+    databaseURL: "https://arena-ducs-default-rtdb.firebaseio.com",
+    projectId: "arena-ducs",
+    storageBucket: "arena-ducs.appspot.com",
+    messagingSenderId: "917188227682",
+    appId: "1:917188227682:web:8e19b8465af228d60b173b",
+    measurementId: "G-DYW4RYL52K"
 };
 
 // Initialize Firebase
