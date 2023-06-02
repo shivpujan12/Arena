@@ -7,7 +7,7 @@ var loginButton = document.getElementById("loginButton");
 
 function isValidUser() {
     console.log("in vaid");
-    const userRef = ref(db,"Users/"+user.value);
+    const userRef = ref(db,"Users/"+user.value+"/password");
     onValue(userRef,(snapshot) => {
         const data = snapshot.val();
         console.log(data);
