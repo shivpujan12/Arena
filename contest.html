@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arena</title>
+    <link rel="stylesheet" href="./css/contest.css">
+</head>˘
+<body>
+    <div id="winner" class="title"><u>Arena</u></div>
+    <div id="timer_div">
+        <button id="timer" onclick="startCountDown()">Start Timer</button>
+    </div>
+    <div id="timer-end-alert">
+        Wait for the match to start:
+        <a href="https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
+           target="_blank">
+            Linked List
+        </a>
+    </div>
+    <div id="alert" class="progress">
+        Updating...
+    </div>
+    <div class="arena">
+        <div class="section-one">
+            <h2 id="player-one" class="player-one">Rishi</h2>
+            <div id="player-one-score" class="score">
+                00
+            </div>
+            <div class="action">
+                <div class="question">
+                    <div class="link-box">
+                        <input class="link" type="text" id="link1" placeholder="Enter Ans Link">
+                        <button class="link-btn" id="p1-link-btn1" onclick="updateLink('p1-link-btn1','link1')">Submit
+                        </button>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="link-box">
+                        <input class="link" type="text" id="link2" placeholder="Enter Ans Link">
+                        <button class="link-btn" id="p1-link-btn2" onclick="updateLink('p1-link-btn2','link2')">Submit
+                        </button>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="link-box">
+                        <input class="link" type="text" id="link3" placeholder="Enter Ans Link">
+                        <button class="link-btn" id="p1-link-btn3" onclick="updateLink('p1-link-btn3','link3')">Submit
+                        </button>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="link-box">
+                        <input class="link" type="text" id="link4" placeholder="Enter Ans Link">
+                        <button class="link-btn" id="p1-link-btn4" onclick="updateLink('p1-link-btn4','link4')">Submit
+                        </button>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="link-box">
+                        <input class="link" type="text" id="link5" placeholder="Enter Ans Link">
+                        <button class="link-btn" id="p1-link-btn5" onclick="updateLink('p1-link-btn5','link5')">Submit
+                        </button>
+                    </div>
+                </div>
+                <!--                <button class="plus" onclick="one_incr()">-->
+                <!--                    +-->
+                <!--                </button>-->
+                <!--<button class="minus">
+                    -
+                </button>-->
+            </div>
+        </div>
+        <div id="player-two" class="section-two">
+            <h2 class="player-two">Shivpujan</h2>
+            <div id="player-two-score" class="score">
+                00
+            </div>
+            <div class="action">
+                <div class="question">
+                    <div class="link-box">
+                        <input class="link" type="text" id="p2-link1" placeholder="Enter Ans Link">
+                        <button class="link-btn" id="p2-link-btn1" onclick="updateLink('p2-link-btn1','p2-link1')">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="link-box">
+                        <input class="link" type="text" id="p2-link2" placeholder="Enter Ans Link">
+                        <button class="link-btn" id="p2-link-btn2" onclick="updateLink('p2-link-btn2','p2-link2')">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="link-box">
+                        <input class="link" type="text" id="p2-link3" placeholder="Enter Ans Link">
+                        <button class="link-btn" id="p2-link-btn3" onclick="updateLink('p2-link-btn3','p2-link3')">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="link-box">
+                        <input class="link" type="text" id="p2-link4" placeholder="Enter Ans Link">
+                        <button class="link-btn" id="p2-link-btn4" onclick="updateLink('p2-link-btn4','p2-link4')">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="link-box">
+                        <input class="link" type="text" id="p2-link5" placeholder="Enter Ans Link">
+                        <button class="link-btn" id="p2-link-btn5" onclick="updateLink('p2-link-btn5','p2-link5')">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+                <!--                <button class="plus" onclick="one_incr()">-->
+                <!--                    +-->
+                <!--                </button>-->
+                <!--<button class="minus">
+                    -
+                </button>-->
+            </div>
+        </div>
+        <div id="player-three" class="section-two">
+            <h2 class="player-two">Rohit</h2>
+            <div id="player-three-score" class="score">
+                00
+            </div>
+            <div class="action">
+                <div class="question">
+                    <div class="link-box">
+                        <input class="link" type="text" id="p3-link1" placeholder="Enter Ans Link">
+                        <button class="link-btn" id="p3-link-btn1" onclick="updateLink('p3-link-btn1','p3-link1')">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="link-box">
+                        <input class="link" type="text" id="p3-link2" placeholder="Enter Ans Link">
+                        <button class="link-btn" id="p3-link-btn2" onclick="updateLink('p3-link-btn2','p3-link2')">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="link-box">
+                        <input class="link" type="text" id="p3-link3" placeholder="Enter Ans Link">
+                        <button class="link-btn" id="p3-link-btn3" onclick="updateLink('p3-link-btn3','p3-link3')">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="link-box">
+                        <input class="link" type="text" id="p3-link4" placeholder="Enter Ans Link">
+                        <button class="link-btn" id=p3-link-btn4" onclick="updateLink('p3-link-btn4','p3-link4')">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="link-box">
+                        <input class="link" type="text" id="p3-link5" placeholder="Enter Ans Link">
+                        <button class="link-btn" id="p3-link-btn5" onclick="updateLink('p3-link-btn5','p3-link5')">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+                <!--                <button class="plus" onclick="one_incr()">-->
+                <!--                    +-->
+                <!--                </button>-->
+                <!--<button class="minus">
+                    -
+                </button>-->
+            </div>
+        </div>
+        <div id="player-four" class="section-two">
+            <h2 class="player-two">Navneet</h2>
+            <div id="player-four-score" class="score">
+                00
+            </div>
+            <div class="action">
+                <div class="question">
+                    <div class="link-box">
+                        <input class="link" type="text" id="p4-link1" placeholder="Enter Ans Link">
+                        <button class="link-btn" id="p4-link-btn1" onclick="updateLink('p4-link-btn1','p4-link1')">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="link-box">
+                        <input class="link" type="text" id="p4-link2" placeholder="Enter Ans Link">
+                        <button class="link-btn" id="p4-link-btn2" onclick="updateLink('p4-link-btn2','p4-link2')">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="link-box">
+                        <input class="link" type="text" id="p4-link3" placeholder="Enter Ans Link">
+                        <button class="link-btn" id="p4-link-btn3" onclick="updateLink('p4-link-btn3','p4-link3')">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="link-box">
+                        <input class="link" type="text" id="p4-link4" placeholder="Enter Ans Link">
+                        <button class="link-btn" id=p4-link-btn4" onclick="updateLink('p4-link-btn4','p4-link4')">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="link-box">
+                        <input class="link" type="text" id="p4-link5" placeholder="Enter Ans Link">
+                        <button class="link-btn" id="p4-link-btn5" onclick="updateLink('p4-link-btn5','p4-link5')">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+                <!--                <button class="plus" onclick="one_incr()">-->
+                <!--                    +-->
+                <!--                </button>-->
+                <!--<button class="minus">
+                    -
+                </button>-->
+            </div>
+        </div>
+    </div>
+<div class="question-list">
+    <h1>Question List</h1>
+    <a class = "question-link" href="https://leetcode.com/problems/middle-of-the-linked-list/">Question 1 Link</a>
+
+    <a class = "question-link"href="https://leetcode.com/problems/reverse-linked-list/">Question 2 Link</a>
+
+    <a class = "question-link"href="https://leetcode.com/problems/linked-list-cycle/">Question 3 Link</a>
+
+    <a class = "question-link"href="https://leetcode.com/problems/linked-list-cycle-ii/">Question 4 Link</a>
+
+    <a class = "question-link"href="https://leetcode.com/problems/palindrome-linked-list/">Question 5 Link</a>
+
+</div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js"></script>
+<script src="./js/contest.js"></script>
+</html>
