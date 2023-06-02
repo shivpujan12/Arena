@@ -57,8 +57,10 @@ function writeUserData() {
     const constRef = push(reference)
 
     set(constRef, {
+        owner: localStorage.getItem("username"),
         time: timeInput.value,
         topic: topicInput.value,
+        status: 0 // 0 for not started, 1 for started, 2 for ended
     });
 
     const rows = table.rows;

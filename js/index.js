@@ -13,7 +13,7 @@ function isValidUser() {
         console.log(data);
         console.log("password"+password.value);
         if(data === password.value) {
-            localStorage.setItem("user",user.value);
+            localStorage.setItem("username",user.value);
             window.location.href="dashboard.html";
             console.log("crret");
         }

@@ -6,7 +6,7 @@ var createButton = document.getElementById("createButton")
 var joinButton = document.getElementById("joinButton");
 var greet = document.getElementById("greet");
 
-greet.innerHTML = "Welcome "+localStorage.getItem("user");
+greet.innerHTML = "Welcome "+localStorage.getItem("username");
 function join() {
     if(joinInput.value !== "") {
         console.log("in vaid");
