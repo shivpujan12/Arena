@@ -49,7 +49,7 @@ function startCountDown(){
     const ref = database.ref("countdown");
     ref.set({
         startAt: new Date().getTime(),
-        endAt: 2
+        endAt: 1
     });
 
     database.ref('countdown').on('value',function (snapshot){
@@ -72,6 +72,7 @@ function get() {
         document.getElementById("player-one-score").innerText = data.Rishi;
         document.getElementById("player-two-score").innerText = data.Shivpujan;
         document.getElementById("player-three-score").innerText = data.Rohit;
+        document.getElementById("player-four-score").innerText = data.Navneet;
         document.getElementById('alert').style.display = 'none';
     })
 
@@ -117,6 +118,39 @@ function three_incr() {
     database.ref('Score').update(updates)
     document.getElementById('alert').style.display = 'block';
     get();
+}
+
+function four_incr() {
+    let player_two_score = document.getElementById('player-four-score').innerText;
+    player_two_score = String(parseInt(player_two_score) + 1)
+
+    const updates = {
+        Navneet: player_two_score
+    };
+    database.ref('Score').update(updates)
+    document.getElementById('alert').style.display = 'block';
+    get();
+}
+
+function updateLink(e,e1) {
+    var btn = document.getElementById(e);
+    var link = document.getElementById(e1);
+    console.log(btn,link)
+    if(link.value === ""){
+        alert("Please enter a valid link");
+    } else {
+        if(e.includes('p1')){
+            one_incr();
+        } else if(e.includes('p2')){
+            two_incr();
+        } else if(e.includes('p3')){
+            three_incr();
+        } else {
+            four_incr();
+        }
+        btn.style.visibility = 'hidden';
+    }
+
 }
 
 
