@@ -11,17 +11,29 @@ import {
 const timerDiv = document.getElementById('timerDiv');
 const timerButton = document.getElementById('timer');
 const waitDiv = document.getElementById('waitDiv');
+const ownerDiv= document.getElementById("ownerDiv")
+
 timerButton.addEventListener('click',startCountDown);
 const contestRef = ref(db,"Contest/"+localStorage.getItem("joinContestId"));
 const statusRef = ref(db, "Contest/"+localStorage.getItem("joinContestId")+"/status");
 const durationRef = ref(db,"Contest/"+localStorage.getItem("joinContestId")+"/time");
 const questionRef = ref(db,"Contest/"+localStorage.getItem("joinContestId")+"/Questions");
+
+document.getElementById("contest-code").innerHTML = "<p> contest code: " +localStorage.getItem("joinContestId") + "</p><br>";
+
 onValue(statusRef,(snapshot) => {
     const data = snapshot.val();
     onStatusChange(data).then(r => console.log("status changed"));
     console.log("status"+data);
 
 });
+
+onValue(contestRef,(snapshot) => {
+    const data = snapshot.val();
+    console.log(data.owner)
+    ownerDiv.innerHTML = "<p>" + data.owner + " will start the contest" + "</p>";
+});
+
 async function onStatusChange(data) {
     console.log("inside on status change" + data);
     timerDiv.style.display = "none";
@@ -82,5 +94,15 @@ async function startCountDown() {
     //     startTimer(countDownDate);
     // })
 }
+
+
+//Creating the Table for participants
+onValue(contestRef,(snapshot) => {
+    const data = snapshot.val();
+    console.log(data);
+    console.log("participants",participants);
+})
+
+
 
 
