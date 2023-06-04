@@ -8,7 +8,6 @@ import {
     child,
     runTransaction
 } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js";
-
 const timerDiv = document.getElementById('timerDiv');
 const timerButton = document.getElementById('timer');
 const waitDiv = document.getElementById('waitDiv');
@@ -30,7 +29,7 @@ async function onStatusChange(data) {
         onValue(contestRef, (snapshot) => {
                 const data = snapshot.val();
                 if (data.owner === localStorage.getItem("username")) {
-                    timerDiv.style.display = "block";
+                    document.getElementById('timerDiv').style.display = "block";
                     console.log("inside data 0 timer div");
                 } else {
                     document.getElementById('timerDiv').style.display = "none";
