@@ -13,8 +13,8 @@ function join() {
         const contestRef = ref(db,"Contest/"+joinInput.value);
         onValue(contestRef,(snapshot) => {
             if(snapshot.exists()) {
-                localStorage.setItem("contestId",joinInput.value);
-                window.location.href="contest.html";
+                localStorage.setItem("joinContestId",joinInput.value);
+                window.location.href="joinContest.html";
             }
             else {
                 alert("Invalid Contest ID");
