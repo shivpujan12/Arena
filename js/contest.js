@@ -52,6 +52,7 @@ get(ref(db, "Contest/" + localStorage.getItem("joinContestId") + "/Questions")).
             var queUrl = document.createElement('a');
             queUrl.href = data[i + ""]["queUrl"];
             queUrl.textContent = data[i + ""]["queName"];
+            queUrl.target = "_blank";
             queName.appendChild(queUrl);
 
             var answer = document.createElement('td');
