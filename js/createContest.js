@@ -58,7 +58,7 @@ function writeUserData() {
 
     set(constRef, {
         owner: localStorage.getItem("username"),
-        time: timeInput.value,
+        time: {endAt: timeInput.value},
         topic: topicInput.value,
         status: 0 // 0 for not started, 1 for started, 2 for ended
     });
