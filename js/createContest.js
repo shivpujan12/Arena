@@ -98,5 +98,5 @@ function showPopup(constRef) {
 var popupButton = document.getElementById("popupButton");
 popupButton.addEventListener("click", closePopup);
 function closePopup() {
-    window.location.href = "dashboard.html";
+    window.location.href = "pages/dashboard.html";
 }

@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Code Arena 2023</title>
-<!--    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js"></script>-->
-<!--    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js"></script>-->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
     <script type="module" src="./js/firebase.js"></script>
-     <script type= "module" src = "./js/index.js"></script>
+    <script type="module" src="./js/index.js"></script>
 </head>
 <body>
-    <h1><b>Welcome to Code Arena 2023</b></h1>
-    <br>
-    <input type="text" id="userInput" placeholder="user id">
-    <br>
-    <input type="text" id="passwordInput" placeholder="password"><br>
-    <button id="loginButton" >login</button>
+<h1>Code Arena</h1>
+<div class="login">
+    <h3>Login Here</h3>
 
+    <label for="userInput">Username</label>
+    <input type="text" placeholder="User ID" id="userInput">
+
+    <label for="passwordInput">Password</label>
+    <input type="password" placeholder="Password" id="passwordInput">
+
+    <button id="loginButton">Log In</button>
+</div>
 </body>
 </html>

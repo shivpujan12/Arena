@@ -14,7 +14,7 @@ function join() {
         onValue(contestRef,(snapshot) => {
             if(snapshot.exists()) {
                 localStorage.setItem("joinContestId",joinInput.value);
-                window.location.href="joinContest.html";
+                window.location.href="pages/joinContest.html";
             }
             else {
                 alert("Invalid Contest ID");
@@ -29,7 +29,7 @@ function join() {
 }
 
 function create() {
-    window.location.href="createContest.html";
+    window.location.href="pages/createContest.html";
 }
 
 joinButton.addEventListener("click", join);
