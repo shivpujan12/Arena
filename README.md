@@ -6,7 +6,7 @@ Progress of Content
 
 S.No.   |         Feature Name            | Develper assigned   | Tested | Status/Review   | Final Status
 :------:|:----------------------- |:-----------------:|:------:|:-----------------:|:------------:
-|1. | Project Creation with Old Arena  | Shivpujan | yes | pending | - |
+|1. | Project Creation with Old Arena  | Shivpujan | done | done | done |
 |2. | Authentication | Ritik soni | - | - | -|
 |3. | User profile  | Ritik Soni | - | - | - |
 |4. | Contest Creation  | Rishi | yes | done | done |
