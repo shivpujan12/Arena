@@ -143,7 +143,7 @@ function startTimer(countDownDate) {
             clearInterval(x);
             document.getElementById("timerDiv").innerHTML = 'time end';
             set(ref(db, "Contest/" + localStorage.getItem("joinContestId") + "/status"),2);
-            window.location.href = "pages/endContest.html";
+            window.location.href = "endContest.html";
         }
     }, 1000);
 }

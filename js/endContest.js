@@ -56,5 +56,5 @@ function fillLeaderBoard() {
     });
 }
 document.getElementById("doneButton").addEventListener("click", () => {
-    window.location.href="pages/dashboard.html";
+    window.location.href="dashboard.html";
 });

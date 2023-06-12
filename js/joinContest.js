@@ -64,13 +64,13 @@ async function onStatusChange(data) {
             for (let i = 1; i < queNum; i++) {
                 set(child(contestRef, "participants/" + username + "/questions/" + i), "");
             }
-            window.location.href = "pages/contest.html";
+            window.location.href = "contest.html";
         });
 
 
         // startContest();
     } else if (data === 2) {
-        window.location.href = "pages/endContest.html";
+        window.location.href = "endContest.html";
     }
 }
 // function addAnsPoint(id, queNumber, username) {
