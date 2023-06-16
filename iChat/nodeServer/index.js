@@ -1,5 +1,5 @@
 //Node server which will handle all Socket.io connections
-const io = require('socket.io')(process.env.PORT||8000,{cors : 'http://localhost:8000'});
+const io = require('socket.io')(process.env.PORT||8000,{cors : 'https://chat-box-7ht2.onrender.com:8000'});
 
 const users = {}
 
